@@ -22,3 +22,9 @@ To fully use this program, you need to have:
 
 ## Running
 After completing all the steps from the "Installation" section, simply run `node .` from the repository. From now on, your Discord status will be updated according to the game you're playing on Steam.
+
+## How it looks like
+![1](https://i.imgur.com/d4IwPl8.png)
+![2](https://i.imgur.com/8P87g7S.png)
+![3](https://i.imgur.com/dr1QUBJ.png)
+![4](https://i.imgur.com/kELOkIX.png)
