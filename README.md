@@ -13,8 +13,10 @@ To fully use this program, you need to:
 - Install [Node.js](https://nodejs.org) (v12+)
 
 ## Installation
-- Download and unzip this repo somewhere on your PC (or just use `git clone https://github.com/Meff1u/SteamRPC`)
-- Install required dependecies (`npm i` inside of SteamRPC repo)
+- Download and unzip this repo somewhere on your PC
+  - or just use `git clone https://github.com/Meff1u/SteamRPC`
+- Install required dependecies
+  - `npm i` inside of SteamRPC repo
 - Fill config.json file with:
   - `friendUsername`: Username of your second account
   - `friendPassword`: Password of your second account
