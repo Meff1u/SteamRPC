@@ -27,7 +27,7 @@ To fully use this program, you need to:
     - `steamID`: ID of your Steam account you want to track
 
 ## Running
-After completing all the steps from the "Installation" section, simply run `node .` from the repository. From now on, your Discord status will be updated according to the game you're playing on Steam.
+After completing all the steps from the "Installation" section, click RUN.bat file in the repository (or just run `node .` in the repo directory). From now on, your Discord status will be updated according to the game you're playing on Steam.
 
 ## How it looks like
 ![1](https://i.imgur.com/d4IwPl8.png)
