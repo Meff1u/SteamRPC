@@ -4,6 +4,7 @@ Pretty simple script that allows you to display currently playing game on steam 
 ## Notes
 To fully use this program, you need to:
 - Set your main account to public
+  - ![7](https://i.imgur.com/WRBX9A8.png)
 - Create a second account (for example, with a temporary email, it will scrape data from the account you play on)
 - Add the second, auxiliary account as a friend
 - Remove Steam Guard from the second, auxiliary account
