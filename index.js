@@ -16,7 +16,8 @@ let yourSteamID,
     logRPCStatus = chalk.cyan('Connecting...'),
     logChosenProfile = '',
     logGameDetails = '',
-    logDebug = '';
+    logDebug = '',
+    invalidApi = false;
 
 const titleText = fs.readFileSync('title.txt', 'utf8');
 
@@ -42,12 +43,30 @@ rpc.on('ready', () => {
 });
 
 client.on('loggedOn', async () => {
+    if (!client._loginSession) {
+        logDebug += chalk.redBright('Failed to log in, check your credentials in config.json file.\n');
+        refreshWindow();
+        return;
+    }
+    if (!apikey || invalidApi) {
+        logDebug += chalk.redBright('API key is missing or invalid. Check config.json file.\n');
+        refreshWindow();
+        return;
+    }
+    if (profiles.length === 0 || !profiles[0].steamID) {
+        logDebug += chalk.redBright('No steam profiles to track in config.json file.\n');
+        refreshWindow();
+        return;
+    }
+
+
     logSteamStatus = chalk.greenBright(`Logged in (${client._loginSession._accountName})`);
     refreshWindow();
     client.setPersona(SteamUser.EPersonaState.Online);
 
     await waitForFriendsList();
     yourSteamID = await chooseProfile(profiles);
+    logGameDetails = chalk.yellow('Waiting for game activity...');
     refreshWindow();
 
     const isFriend = await checkIfFriend(yourSteamID);
@@ -129,7 +148,12 @@ async function getGameIconURL(gameID) {
         }
         return null;
     } catch (error) {
-        logDebug += chalk.redBright(`Error fetching game icon: ${error}\n`);
+        if (error.message.includes('403')) {
+            logDebug += chalk.redBright('API key is invalid\n');
+            invalidApi = true;
+        } else {
+            logDebug += chalk.redBright(`Error fetching game icon: ${error}\n`);
+        }
         refreshWindow();
     }
 }

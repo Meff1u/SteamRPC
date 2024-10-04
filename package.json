@@ -8,7 +8,7 @@
     "steam-user": "^5.2.0"
   },
   "name": "steamrpc",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Set Steam RPC on Discord RPC",
   "main": "index.js",
   "scripts": {
