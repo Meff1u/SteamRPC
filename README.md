@@ -22,8 +22,9 @@ To fully use this program, you need to:
   - `friendUsername`: Username of your second account
   - `friendPassword`: Password of your second account
   - `apikey`: [Steam API key](https://steamcommunity.com/dev/apikey)
-  - `yourSteamID`: ID of your Steam account you play on
-    - that numbers after steamcommunity.com/profiles/[...]
+  - `profiles`:
+    - `name`: Name of profile (can be whatever)
+    - `steamID`: ID of your Steam account you want to track
 
 ## Running
 After completing all the steps from the "Installation" section, simply run `node .` from the repository. From now on, your Discord status will be updated according to the game you're playing on Steam.
@@ -33,6 +34,25 @@ After completing all the steps from the "Installation" section, simply run `node
 ![2](https://i.imgur.com/8P87g7S.png)
 ![3](https://i.imgur.com/dr1QUBJ.png)
 ![4](https://i.imgur.com/kELOkIX.png)
+
+## Example config.json file with more than one profile
+```json
+{
+    "friendUsername": "secondaccount",
+    "friendPassword": "mySuperSecretPassword",
+    "apikey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "profiles": [
+        {
+            "name": "Profile 1",
+            "steamID": "73395478392175938"
+        },
+        {
+            "name": "Profile 2",
+            "steamID": "74742228884829948"
+        }
+    ]
+}
+```
 
 ## Known issues
 When launching the game for the first time in a while, the game logo might not load (instead, the Steam logo will be visible). This is because the game logo is pulled from the API `api.steampowered.com/IPlayerService/GetRecentlyPlayedGames`, so if the game you intend to play isn't on that list, this issue will occur. The logo should appear correctly the next time you launch the game.
