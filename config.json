@@ -2,5 +2,10 @@
     "friendUsername": "",
     "friendPassword": "",
     "apikey": "",
-    "yourSteamID": ""
+    "profiles": [
+        {
+            "name": "",
+            "steamID": ""
+        }
+    ]
 }

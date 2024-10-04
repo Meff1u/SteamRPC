@@ -2,13 +2,13 @@
   "dependencies": {
     "@xhayper/discord-rpc": "^1.2.0",
     "axios": "^1.7.7",
+    "chalk": "^4.1.2",
     "steam-user": "^5.2.0"
   },
   "name": "steamrpc",
   "version": "1.0.1",
   "description": "Set Steam RPC on Discord RPC",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
