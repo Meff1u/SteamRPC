@@ -21,7 +21,8 @@ To fully use this program, you need to:
   - `friendUsername`: Username of your second account
   - `friendPassword`: Password of your second account
   - `apikey`: [Steam API key](https://steamcommunity.com/dev/apikey)
-  - `yourSteamID`: ID of your Steam account you play on (that numbers after https://steamcommunity.com/profiles/[...])
+  - `yourSteamID`: ID of your Steam account you play on
+    - that numbers after steamcommunity.com/profiles/[...]
 
 ## Running
 After completing all the steps from the "Installation" section, simply run `node .` from the repository. From now on, your Discord status will be updated according to the game you're playing on Steam.
