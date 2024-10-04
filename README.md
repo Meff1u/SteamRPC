@@ -2,14 +2,14 @@
 Pretty simple script that allows you to display currently playing game on steam with Discord RPC (also with games that supports Steam Rich Presence)
 
 ## Notes
-To fully use this program, you need to have:
+To fully use this program, you need to:
 - Set your main account to public
-- A second account (created, for example, with a temporary email, it will scrape data from the account you play on)
+- Create A second account (for example, with a temporary email, it will scrape data from the account you play on)
 - Add the second, auxiliary account as a friend
 - Remove Steam Guard from the second, auxiliary account (you don't have to, but it will save you from entering the Steam Guard code every time you run the program)
 - Enable status visibility in Discord's privacy settings
 - Create a [Steam API key](https://steamcommunity.com/dev/apikey)
-- [Node.js](https://nodejs.org) (v12+)
+- Install [Node.js](https://nodejs.org) (v12+)
 
 ## Installation
 - Download and unzip this repo somewhere on your PC (or just use `git clone https://github.com/Meff1u/SteamRPC`)
