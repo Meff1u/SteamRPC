@@ -56,9 +56,10 @@ After completing all the steps from the "Installation" section, click RUN.bat fi
 
 ## Known issues
 - When launching the game for the first time in a while, the game logo might not load (instead, the Steam logo will be visible). This is because the game logo is pulled from the API `api.steampowered.com/IPlayerService/GetRecentlyPlayedGames`, so if the game you intend to play isn't on that list, this issue will occur. The logo should appear correctly the next time you launch the game.
-- Setting an invalid Steam API key may cause the entire UI to disappear. I’m not sure why this happens, so make sure to use the correct key XD
 
-### First run:
-![5](https://i.imgur.com/D478eW1.png)
-### Second run:
-![6](https://i.imgur.com/Hx4Feqi.png)
+  ### First run:
+  ![5](https://i.imgur.com/D478eW1.png)
+  ### Second run:
+  ![6](https://i.imgur.com/Hx4Feqi.png)
+
+- Setting an invalid Steam API key may cause the entire UI to disappear. I’m not sure why this happens, so make sure to use the correct key XD
