@@ -21,7 +21,7 @@ client.logOn(logOnOptions);
 rpc.login();
 
 rpc.on('ready', () => {
-    console.log('[RPC] Discord RPC connected');
+    console.log(`[RPC] Discord RPC connected to ${rpc.user.username} (${rpc.user.id})`);
 });
 
 client.on('loggedOn', () => {
