@@ -1,5 +1,29 @@
-# SteamRPC
-Pretty simple script that allows you to display currently playing game on steam with Discord RPC (also with games that supports Steam Rich Presence)
+<p align="center">
+  <img src="https://github.com/Meff1u/SteamRPC/blob/main/imgs/SteamRPC.png" width="512" alt="SteamRPC" /><br>
+  Pretty simple script that allows you to display currently playing game on steam with Discord RPC (also with games that supports Steam Rich Presence)
+</p>
+<p align="center">
+  <a title="Contributors" href="https://github.com/Meff1u/SteamRPC/contributors" target="_blank">
+    <img src="https://img.shields.io/github/contributors/Meff1u/SteamRPC.svg?color=blue&label=Contributors&style=for-the-badge" alt="Contributors" />
+  </a>
+  <a title="Release" href="https://github.com/Meff1u/SteamRPC/releases" target="_blank">
+    <img src="https://img.shields.io/github/release/Meff1u/SteamRPC.svg?color=blueviolet&label=Release&style=for-the-badge" alt="Latest Release" />
+  </a>
+  <a title="Downloads" href="https://github.com/Meff1u/SteamRPC/downloads" target="_blank">
+    <img src="https://img.shields.io/github/downloads/Meff1u/SteamRPC/total?color=green&label=Downloads&style=for-the-badge" alt="Downloads" />
+  </a><br>
+  <a title="Open Issues" href="https://github.com/Meff1u/SteamRPC/issues" target=_blank">
+    <img src="https://img.shields.io/github/issues-raw/Meff1u/SteamRPC.svg?color=red&label=Open%20Issues&style=for-the-badge" alt="Open Issues" />
+  </a>
+  <a title="Closed Issues" href="https://github.com/Meff1u/SteamRPC/issues" target=_blank">
+    <img src="https://img.shields.io/github/issues-closed-raw/Meff1u/SteamRPC.svg?color=green&label=Closed%20Issues&style=for-the-badge" alt="Closed Issues" />
+  </a><br>
+  <a title="Download SteamRPC" href="https://github.com/Meff1u/SteamRPC/releases/latest" target="_blank">
+    <img src="https://github.com/Meff1u/SteamRPC/blob/main/imgs/download_button.png" alt="Download SteamRPC" />
+  </a>
+</p>
+
+---
 
 ## Notes
 To fully use this program, you need to:
