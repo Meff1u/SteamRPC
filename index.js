@@ -1,4 +1,5 @@
-process.title = "SteamRPC 1.1.1 by Meffiu";
+process.title = "SteamRPC 1.1.3 by Meffiu";
+console.clear();
 
 import SteamUser from 'steam-user';
 import axios from 'axios';
@@ -98,7 +99,8 @@ client.on('loggedOn', async () => {
                             smallImageKey: steamImg,
                             smallImageText: 'Steam',
                             instance: false,
-                            startTimestamp: Date.now()
+                            startTimestamp: Date.now(),
+                            buttons: [{ label: 'View game', url: `https://store.steampowered.com/app/${gameID}` }, { label: 'Download SteamRPC', url: `https://github.com/Meff1u/SteamRPC` }]
                         });
                         logGameDetails = chalk.greenBright(`${gameName} | ${richPresence}`);
                         refreshWindow();
@@ -194,7 +196,7 @@ function askForProfileIndex(max) {
 }
 
 function refreshWindow() {
-    console.clear();
+    LogUpdate.clear();
     LogUpdate(
         titleText + '\n\n' +
         `${chalk.white('[Steam status]')} ${logSteamStatus}\n` +
