@@ -1,4 +1,4 @@
-process.title = "SteamRPC 1.1.3 by Meffiu";
+process.title = "SteamRPC 1.1.4 by Meffiu";
 console.clear();
 
 import SteamUser from 'steam-user';
@@ -65,7 +65,10 @@ client.on('loggedOn', async () => {
     refreshWindow();
     client.setPersona(SteamUser.EPersonaState.Online);
 
+    logGameDetails = chalk.yellow('Waiting for friends list...');
+    refreshWindow();
     await waitForFriendsList();
+
     yourSteamID = await chooseProfile(profiles);
     logGameDetails = chalk.yellow('Waiting for game activity...');
     refreshWindow();
@@ -122,7 +125,8 @@ client.on('loggedOn', async () => {
 function waitForFriendsList() {
     return new Promise((resolve) => {
         client.once('friendsList', () => {
-            console.log(chalk.greenBright('[Steam] Friends list received'));
+        	logGameDetails = chalk.yellow('Friends list received!');
+        	refreshWindow();
             resolve();
         });
     });
