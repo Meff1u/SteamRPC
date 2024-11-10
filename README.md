@@ -38,7 +38,7 @@ To fully use this program, you need to:
 - Install [Node.js](https://nodejs.org) (v12+)
 
 ## Installation
-- Download and unzip this repo somewhere on your PC
+- [Download](https://github.com/Meff1u/SteamRPC/releases/latest) and unzip this repo somewhere on your PC
   - or just use `git clone https://github.com/Meff1u/SteamRPC`
 - Install required dependecies
   - `npm i` inside of SteamRPC repo
